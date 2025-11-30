@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile — SoulCare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <button class="icon-btn" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>
+      <h1 class="brand-sm">Profile</h1>
+      <div style="width:42px"></div>
+    </header>
+
+    <section class="card profile-card">
+      <div class="row spaced">
+        <div>
+          <div class="avatar">KS</div>
+        </div>
+
+        <div style="text-align:left">
+          <h3 id="userName">You</h3>
+          <p class="muted small" id="userEmail">Local device</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <h3>Your summary</h3>
+      <p class="muted">Total moods saved: <strong id="totalMoods">0</strong></p>
+      <p class="muted">Total journal entries: <strong id="totalJournal">0</strong></p>
+
+      <div class="row">
+        <button class="big-btn" onclick="exportData()">Export Data</button>
+        <button class="big-btn ghost" onclick="clearAllData()">Clear All</button>
+      </div>
+    </section>
+
+    <nav class="bottom-nav">
+      <a href="mood.html"><i class="fa-solid fa-face-smile"></i><span>Mood</span></a>
+      <a href="journal.html"><i class="fa-solid fa-pen"></i><span>Journal</span></a>
+      <a href="meditation.html"><i class="fa-solid fa-person-breastfeeding"></i><span>Meditate</span></a>
+      <a href="profile.html" class="active"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

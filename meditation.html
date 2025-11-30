@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meditation — SoulCare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <button class="icon-btn" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>
+      <h1 class="brand-sm">Meditation</h1>
+      <div style="width:42px"></div>
+    </header>
+
+    <section class="card med-card">
+      <h2>3-minute breathing</h2>
+      <p class="muted">Follow the circle. Breathe in — hold — breathe out.</p>
+
+      <div class="breath-circle" id="breathCircle"></div>
+
+      <div class="row">
+        <button class="big-btn" id="startMedit">Start</button>
+        <button class="big-btn ghost" id="stopMedit">Stop</button>
+      </div>
+
+      <audio id="medAudio" loop>
+        <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <nav class="bottom-nav">
+      <a href="mood.html"><i class="fa-solid fa-face-smile"></i><span>Mood</span></a>
+      <a href="journal.html"><i class="fa-solid fa-pen"></i><span>Journal</span></a>
+      <a href="meditation.html" class="active"><i class="fa-solid fa-person-breastfeeding"></i><span>Meditate</span></a>
+      <a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
